@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-column {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    flex-grow: 2;
+    margin-right: 10px;
+}
+
+.header-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-social h3 {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.header-social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-photo {
+    width: 241px;
+    height: 241px;
+    border-radius: 50%;
+}
+
+.webpage {
+    width: 21cm;
+    height: 29.7cm;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3 {
+    font-size: 24px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.cv-entry {
+    display: flex;
+    flex-direction: row;
+}
+
+.v-stepper {
+    position: relative;
+}
+
+.step {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: cream;
+}
+
+.step.active .circle {
+    visibility: visible;
+      border-color: rgb(6,150,215);
+}
+
+.step .circle {
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.step .line {
+    top: 23px;
+    left: 12px;
+    height: 100%;
+    position: absolute;
+    border-left: 3px solid gray;
+}
+
+.step.completed .circle {
+    visibility: visible;
+    background-color: rgb(6,150,215);
+    border-color: rgb(6,150,215);
+  }
+  
+  .step.completed .line {
+    border-left: 3px solid rgb(6,150,215);
+  }
+  
+
+.stepper-content {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.stepper-content p{
+    margin-left: 30px;
+}
+
+.experience {
+    width: 50%;
+}
+
+.step.ended .line {
+    border-left: 3px solid white;
+    z-index: -1; /* behind the circle to completely hide */
+  }
+
+.row-sections {
+    display: flex;
+    flex-direction: row;
+}
+.row-column {
+    flex: 50;
+}
+
+.rodo {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Ubuntu';
+    font-size: 14.3px;
+}
