@@ -130,6 +130,11 @@
 }
 
 body {
-    font-family: 'Ubuntu';
-    font-size: 14.3px;
+    font-family: Cambria;
+    font-size: 14.8px;
+    -webkit-print-color-adjust: exact !important;
+}
+
+li {
+    margin-top: 5px;
 }
